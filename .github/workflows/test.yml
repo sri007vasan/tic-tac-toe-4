@@ -6,7 +6,11 @@
 #
 # Every push runs the Playwright suite in tests/. Commits reach GitHub Pages only
 # when the suite passes on main. This build verifies:
-#   - Page loads without errors
+#   - page loads without console errors
+#   - alternates turns and displays correct status
+#   - detects a win in a row
+#   - detects a draw
+#   - reset button clears board but keeps scores
 # ---------------------------------------------------------------------------
 name: Test & Deploy
 
